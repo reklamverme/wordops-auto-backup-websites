@@ -24,7 +24,7 @@ bashCopy code
 
 bashCopy code
 
-`git clone https://github.com/yourusername/wordops-s3-backup.git` 
+`git clone https://github.com/reklamverme/wordops-auto-backup-websites.git` 
 
 2.  Open the `autobackup.py` file in your favorite text editor.
     
