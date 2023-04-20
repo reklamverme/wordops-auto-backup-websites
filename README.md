@@ -1,14 +1,14 @@
+# WordOps Website Backup to Amazon S3
 This repository contains a Python script that automates the backup process for WordOps websites and their respective MySQL databases to Amazon S3. It allows you to schedule regular backups, ensuring that your website data is safely stored and easily accessible. The script is designed to be easy to configure and can be set up to run automatically via cron, providing a reliable and secure solution for your website backup needs.
 
-Prerequisites
+##Prerequisites
 Before you begin, ensure you have the following prerequisites installed on your system:
 
 Python 3.6 or higher
 Boto3 (AWS SDK for Python)
 You can install Boto3 using pip:
 
-bash
-Copy code
+```bash
 pip install boto3
 An Amazon S3 bucket to store the backups
 AWS CLI configured with the necessary AWS access and secret keys
@@ -23,8 +23,7 @@ Replace the s3_bucket_name variable with the name of your Amazon S3 bucket.
 
 Update the websites list with the necessary information about your WordOps websites, including the local folder path, database name, database user, and database password.
 
-python
-Copy code
+```bash
 websites = [
     {
         'local_folder': '/var/www/example.com/htdocs',
@@ -43,18 +42,15 @@ Save and close the autobackup.py file.
 Usage
 To run the backup script manually, navigate to the directory containing the autobackup.py file and run the following command:
 
-bash
-Copy code
+```bash
 python3 autobackup.py
 To schedule the script to run automatically using cron, open your crontab configuration file:
 
-bash
-Copy code
+```bash
 crontab -e
 Add the following line to the file, replacing /path/to/your/autobackup.py with the actual path to the autobackup.py file on your system:
 
-cron
-Copy code
+```bash
 0 0,12 * * * /usr/bin/python3 /path/to/your/autobackup.py
 This will run the backup script twice a day, at 00:00 and 12:00.
 
