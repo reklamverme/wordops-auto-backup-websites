@@ -10,6 +10,7 @@ You can install Boto3 using pip:
 
 ```bash
 pip install boto3
+
 An Amazon S3 bucket to store the backups
 AWS CLI configured with the necessary AWS access and secret keys
 Configuration
