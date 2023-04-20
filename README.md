@@ -23,7 +23,7 @@ Replace the s3_bucket_name variable with the name of your Amazon S3 bucket.
 
 Update the websites list with the necessary information about your WordOps websites, including the local folder path, database name, database user, and database password.
 
-```bash
+```python
 websites = [
     {
         'local_folder': '/var/www/example.com/htdocs',
