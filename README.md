@@ -11,8 +11,6 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
 You can install Boto3 using pip:
 
-bashCopy code
-
 `pip install boto3` 
 
 3.  An Amazon S3 bucket to store the backups
@@ -21,8 +19,6 @@ bashCopy code
 ## Configuration
 
 1.  Clone the repository to your local system:
-
-bashCopy code
 
 `git clone https://github.com/reklamverme/wordops-auto-backup-websites.git` 
 
@@ -54,19 +50,13 @@ bashCopy code
 
 To run the backup script manually, navigate to the directory containing the `autobackup.py` file and run the following command:
 
-bashCopy code
-
 `python3 autobackup.py` 
 
 To schedule the script to run automatically using cron, open your crontab configuration file:
 
-bashCopy code
-
 `crontab -e` 
 
 Add the following line to the file, replacing `/path/to/your/autobackup.py` with the actual path to the `autobackup.py` file on your system:
-
-cronCopy code
 
 `0 0,12 * * * /usr/bin/python3 /path/to/your/autobackup.py` 
 
